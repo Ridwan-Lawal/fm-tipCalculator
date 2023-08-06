@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply px-12 py-2 text-2xl rounded-lg bg-veryDarkCyan text-white hover:bg-lightGrayishCyan hover:text-veryDarkCyan transition-colors duration-200;
+}
+
+.custom-field {
+  @apply px-10 py-2 text-2xl rounded-lg placeholder:text-darkGrayishCyan bg-veryLIghtGrayishCyan placeholder:text-center text-right text-veryDarkCyan focus:outline-0 focus:border-2 focus:border-lightGrayishCyan transition-all;
+}
