@@ -19,7 +19,51 @@
   <body>
     <!-- container -->
     <div class="container font-mono font-bold">
-      <!-- second block -->
+      <div class="width border-2 border-black">
+        <!--============== second block======================================== -->
+        <div
+          class="bg-veryDarkCyan pt-10 pb-8 rounded-2xl px-7 w-screen md:pt-12 md:pb-9"
+        >
+          <!-- ===========tip amount per person========== -->
+          <div class="flex flex-row justify-between items-center">
+            <section>
+              <p class="text-base text-white">Tip Amount</p>
+              <p class="text-grayishCyan text-sm">/ person</p>
+            </section>
+
+            <p class="flex text-strongCyan text-4xl items-center">
+              <img
+                src="./images/icon-dollar2.svg"
+                alt=""
+                class="h-[26px]"
+              /><span>0.00</span>
+            </p>
+          </div>
+
+          <!-- =================total per person ============-->
+          <div class="flex flex-row justify-between mt-8 items-center">
+            <section>
+              <p class="text-base text-white">total</p>
+              <p class="text-grayishCyan text-sm">/ person</p>
+            </section>
+
+            <p class="flex text-strongCyan text-4xl items-center">
+              <img
+                src="./images/icon-dollar2.svg"
+                alt=""
+                class="h-[26px]"
+              /><span>0.00</span>
+            </p>
+          </div>
+
+          <!--========== reset btn====== -->
+          <button
+            class="bg-darkGrayishCyan text-veryDarkCyan w-full mt-10 py-3 text-xl shadow-sm shadow-grayishCyan rounded-md hover:bg-lightGrayishCyan hover:text-veryDarkCyan transtion duration-200"
+          >
+            RESET
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
