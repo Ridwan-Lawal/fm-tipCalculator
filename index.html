@@ -16,13 +16,67 @@
     <!-- style -->
     <link href="./dist/output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="">
     <!-- container -->
-    <div class="container font-mono font-bold">
-      <div class="width border-2 border-black">
-        <!--============== second block======================================== -->
+    <div
+      class="container bg-lightGrayishCyan font-mono font-bold border max-w-full px-8 py-10"
+    >
+      <!-- logo -->
+      <div class="flex flex-row justify-center">
+        <img src="./images/logo.svg" alt="" />
+      </div>
+
+      <div
+        class="width bg-white mt-12 grid grid-cols-1 md:grid-cols-2 gap-y-14 md:gap-x-12 md:px-9 px-8 py-10 max-w-md mx-auto md:max-w-4xl rounded-3xl"
+      >
+        <!-- ====================first block =====================================================-->
+        <div class="space-y-12 md:space-y-14">
+          <!-- =======================bill section=========== -->
+          <section class="space-y-4">
+            <p class="text-grayishCyan">Bill</p>
+            <form
+              action=""
+              class="flex w-full py-2 px-4 justify-between items-center text-left bg-veryLIghtGrayishCyan rounded-md"
+            >
+              <img src="./images/icon-dollar.svg" alt="" class="h-[21px]" />
+              <input
+                type="text"
+                class="bill text-3xl w-[40%] text-veryDarkCyan placeholder:text-right placeholder:text-grayishCyan bg-inherit font-mono focus:outline-none text-right"
+                placeholder="0"
+              />
+            </form>
+          </section>
+
+          <!-- ============================select tip ============ -->
+          <section class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <button class="btn btn-5">5%</button>
+            <button class="btn btn-10">10%</button>
+            <button class="btn btn-15">15%</button>
+            <button class="btn btn-25">25%</button>
+            <button class="btn btn-50">50%</button>
+            <input type="text" placeholder="Custom" class="custom-field pl-0" />
+          </section>
+
+          <!-- ==================number of people ============= -->
+          <section class="space-y-4">
+            <p class="text-grayishCyan">Number of People</p>
+            <form
+              action=""
+              class="flex border py-2 px-4 justify-between items-center text-left bg-veryLIghtGrayishCyan rounded-md"
+            >
+              <img src="./images/icon-person.svg" alt="" class="h-[21px]" />
+              <input
+                type="text"
+                class="number-ofPeople text-3xl w-[40%] text-veryDarkCyan placeholder:text-right placeholder:text-grayishCyan bg-inherit font-mono focus:outline-none text-right"
+                placeholder="0"
+              />
+            </form>
+          </section>
+        </div>
+
+        <!--============== second block========================================================= -->
         <div
-          class="bg-veryDarkCyan pt-10 pb-8 rounded-2xl px-7 w-screen md:pt-12 md:pb-9"
+          class="bg-veryDarkCyan pt-10 pb-8 rounded-2xl px-7 md:pt-12 md:pb-9"
         >
           <!-- ===========tip amount per person========== -->
           <div class="flex flex-row justify-between items-center">
@@ -58,7 +112,7 @@
 
           <!--========== reset btn====== -->
           <button
-            class="bg-darkGrayishCyan text-veryDarkCyan w-full mt-10 py-3 text-xl shadow-sm shadow-grayishCyan rounded-md hover:bg-lightGrayishCyan hover:text-veryDarkCyan transtion duration-200"
+            class="bg-darkGrayishCyan text-veryDarkCyan w-full mt-10 md:mt-40 py-3 text-xl shadow-sm shadow-grayishCyan rounded-md hover:bg-lightGrayishCyan hover:text-veryDarkCyan transtion duration-200"
           >
             RESET
           </button>
