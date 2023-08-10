@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./src/**/*.{html,js}", "./index.html"],
   theme: {
     fontFamily: {
       mono: ["Space Mono", "monospace"],
@@ -13,7 +13,7 @@ module.exports = {
         grayishCyan: "hsl(184, 14%, 56%)",
         lightGrayishCyan: "hsl(185, 41%, 84%)",
         veryLIghtGrayishCyan: "hsl(189, 41%, 97%)",
-        white: "hsl(0, 0%, 100%)",
+        whites: "hsl(0, 0%, 100%)",
       },
     },
   },

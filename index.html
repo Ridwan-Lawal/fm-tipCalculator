@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <!-- style -->
-    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
   </head>
   <body class="">
     <!-- container -->
@@ -49,11 +49,21 @@
 
           <!-- ============================select tip ============ -->
           <section class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <button class="btn btn-5">5%</button>
-            <button class="btn btn-10">10%</button>
-            <button class="btn btn-15">15%</button>
-            <button class="btn btn-25">25%</button>
-            <button class="btn btn-50">50%</button>
+            <button class="btn btn-5">
+              <span class="percentage">5</span>%
+            </button>
+            <button class="btn btn-10">
+              <span class="percentage">10</span>%
+            </button>
+            <button class="btn btn-15">
+              <span class="percentage">15</span>%
+            </button>
+            <button class="btn btn-25">
+              <span class="percentage">25</span>%
+            </button>
+            <button class="btn btn-50">
+              <span class="percentage">50</span>%
+            </button>
             <input type="text" placeholder="Custom" class="custom-field pl-0" />
           </section>
 
@@ -90,7 +100,7 @@
                 src="./images/icon-dollar2.svg"
                 alt=""
                 class="h-[26px]"
-              /><span>0.00</span>
+              /><span class="tip-amount">0.00</span>
             </p>
           </div>
 
@@ -106,18 +116,21 @@
                 src="./images/icon-dollar2.svg"
                 alt=""
                 class="h-[26px]"
-              /><span>0.00</span>
+              /><span class="total">0.00</span>
             </p>
           </div>
 
           <!--========== reset btn====== -->
           <button
-            class="bg-darkGrayishCyan text-veryDarkCyan w-full mt-10 md:mt-40 py-3 text-xl shadow-sm shadow-grayishCyan rounded-md hover:bg-lightGrayishCyan hover:text-veryDarkCyan transtion duration-200"
+            class="reset-btn bg-darkGrayishCyan text-veryDarkCyan w-full mt-10 md:mt-40 py-3 text-xl rounded-md hover:bg-lightGrayishCyan hover:text-veryDarkCyan transtion duration-200"
           >
             RESET
           </button>
         </div>
       </div>
     </div>
+
+    <!-- js -->
+    <script src="./src/script.js"></script>
   </body>
 </html>
